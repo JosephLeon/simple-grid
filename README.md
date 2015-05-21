@@ -13,3 +13,5 @@ Ex:
 	.right-col {
 		@include grid(9, 4)
 	}
+
+For a heavier weight, more feature rich grid system try out http://zengrids.com/
