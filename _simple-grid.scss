@@ -1,0 +1,25 @@
+$columns: 12;
+
+@mixin container {
+   &:before,
+   &:after {
+     content: "";
+     display: table;
+   }
+   &:after {
+     clear: both;
+   }
+}
+
+@mixin grid($count, $position) {
+	float: left;
+	width: ($count / $columns) * 100%;
+	margin: {
+	  left: (($position - 1) / $columns) * 100%;
+	  right: ((1 - $position - $count) / $columns) * 100%;
+	}
+}
+
+@mixin clear($direction) {
+   clear: $direction;
+}
