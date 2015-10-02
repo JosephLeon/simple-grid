@@ -13,6 +13,7 @@ $columns: 12;
 
 @mixin grid($count, $position) {
 	float: left;
+  box-sizing: border-box;
 	width: ($count / $columns) * 100%;
 	margin: {
 	  left: (($position - 1) / $columns) * 100%;
